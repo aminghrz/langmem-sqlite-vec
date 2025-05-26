@@ -8,11 +8,11 @@ Persistent drop-in replacement for LangGraph's InMemoryStore with vector search 
 Stop losing your agent's memory when your chatbot restarts! 
 
 ## The Problem
-```python
-# This loses all memory when your app restarts 😢
-from langgraph.store.memory import InMemoryStore
-store = InMemoryStore()
-```
+Currently there are two main options for persistent store:
+1 - Postgres + PGVector
+This has a lot of setup and requires a lot of space. This makes it less portable and compact.
+2 - InMemorySrore
+It stores in RAM anytime anywhere but loses all memory when your app restarts 😢
 
 # This persists everything to disk + adds vector search 🚀
 ```python
@@ -89,3 +89,17 @@ print(response.items().mapping['messages'][-1].content)
 print(store.list_namespaces())
 print(store.search(('memory', 'cat_lover')))
 ```
+
+# Requirements:
+asyncio
+concurrent
+json
+logging
+sqlite3
+struct
+collections
+datetime
+typing
+langchain_core
+langgraph
+sqlite-vec
