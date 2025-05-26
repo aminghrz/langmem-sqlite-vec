@@ -92,14 +92,25 @@ print(store.search(('memory', 'cat_lover')))
 
 # Requirements:
 asyncio
+
 concurrent
+
 json
+
 logging
+
 sqlite3
+
 struct
+
 collections
+
 datetime
+
 typing
+
 langchain_core
+
 langgraph
+
 sqlite-vec
