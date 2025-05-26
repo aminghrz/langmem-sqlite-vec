@@ -18,6 +18,8 @@ store = InMemoryStore()
 ```python
 from sqlite_vec_store import SqliteVecStore
 store = SqliteVecStore(db_file="chatbot_memory.db")
+# or
+store = SqliteVecStore(db_file="chatbot_memory.sqlite3")
 # That's it! Same API, persistent storage
 ```
 # Example
