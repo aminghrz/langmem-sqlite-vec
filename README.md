@@ -85,7 +85,5 @@ response = agent.invoke(inputs, config)
 print(response.items().mapping['messages'][-1].content)
 
 print(store.list_namespaces())
+print(store.search(('memory', 'cat_lover')))
 ```
-
-# Known Issues
-Search method returns empty list. But langmem tools work perfectly.
