@@ -1,4 +1,4 @@
-# langmem-sqlite-vec
+# Langmem SQLite Vector Store
 Persistent drop-in replacement for LangGraph's InMemoryStore with vector search capabilities using sqlite3 and sqlite-vec to use as store in langmem and other RAG applications.
 
 # SQLite-Vec Store for LangGraph
